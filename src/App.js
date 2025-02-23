@@ -652,12 +652,12 @@ function App() {
 
                  }
       if (image) {
-           modelToUse = googleGenAI.getGenerativeModel({ model: "gemini-pro-vision" });
+           modelToUse = googleGenAI.getGenerativeModel({ model: "gemini-2.0-pro-exp-02-05" });
             prompt = language === 'vi'
                    ? ["Hãy mô tả chi tiết và chính xác nhất có thể. Đây là hình ảnh và câu hỏi, hãy trả lời chi tiết bằng tiếng việt:\n\n" + userMessageContent, { inlineData: { data: image.split(',')[1], mimeType: image.split(';')[0].split(':')[1] } }]
                   : ["Describe it in as much detail and as accurately as possible. Here is an image and a query, respond in detail:\n\n" + userMessageContent, { inlineData: { data: image.split(',')[1], mimeType: image.split(';')[0].split(':')[1] } }];
           } else {
-               modelToUse = googleGenAI.getGenerativeModel({ model: "gemini-pro" });
+               modelToUse = googleGenAI.getGenerativeModel({ model: "gemini-2.0-pro-exp-02-05" });
               const customPrompt = customInstructions[currentChatId] || "";
 
              if(language === 'vi'){
