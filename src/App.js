@@ -1492,8 +1492,6 @@ const particles = Array.from({ length: 50 }).map((_, i) => ({ // Keep like you h
                           <p style={{ marginTop: '1rem', fontSize: '0.8rem' }}>
                           © {new Date().getFullYear()} Trần Võ Hoàng Nam. All rights reserved.
                         </p>
-                           <p>API Key Google Gemini: AIzaSyDhadJt9dZSF0k9bVfI_Dc18JUYgbpbN7U</p>
-
                         </footer>
                   </ModalContent>
               </ModalOverlay>
